@@ -60,7 +60,7 @@
       jaja: ()  => osc(40,0.1,2).modulate(noise (12)).modulate(o0, 0.15).scale(1.01),
       jajaja:  ()  => osc(60,0.1,2).modulate(noise (12)).modulate(o0, 0.19).scale(1.01),
       tranqui: ()  =>  noise(3,0.1,2).diff(osc(4,1,4)).scale(2).colorama(0.01).modulate(osc(5,.5),0.001).blend(o1,0.1).luma(0.1),
-      neta: () => gradient(1).modulateRepeat(osc(2),50).out(o1).src(o1).modulate(noise(10,2,2) .kaleid(25).scale(({time})=>Math.sin(time*1)*0.5+1)).colorama([1,2,.2,.5,.8,10]),
+      neta: () => gradient(1).modulateRepeat(osc(2),50).out(o1).src(o1).modulate(noise(10,2,2) .kaleid(25).scale(({time})=>Math.sin(time*1)*0.5+1)).colorama([1,2,.2,.5,.8,10]).out(),
       
     };
 
